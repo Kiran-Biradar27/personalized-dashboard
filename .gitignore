@@ -32,6 +32,9 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+NEXT_PUBLIC_WEATHER_API_KEY=a4f9a85bd66256b68d00df1b45e798cd
+NEXT_PUBLIC_NEWS_API_KEY=4be9553242084c289351a0a932eb8f2a
+NEXT_PUBLIC_STOCK_API_KEY=c0f352733fd94dc48012e996eb11954c
 
 # vercel
 .vercel
