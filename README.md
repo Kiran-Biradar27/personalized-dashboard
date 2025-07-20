@@ -2,96 +2,116 @@
 ````markdown
 # 🧠 Personalized Content Dashboard
 
-A modern, responsive web dashboard that provides users with personalized content such as **weather updates**, **latest news**, and **stock prices** — all in one place. Built with **Next.js**, **Tailwind CSS**, **Redux Toolkit**, and external APIs.
+A dynamic, responsive, and customizable dashboard built with **Next.js**, **React**, **Redux Toolkit**, and **Tailwind CSS**. This application integrates real-time **weather**, **news**, and **stock data** based on user preferences.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🌤️ Live Weather Info (API-based)
-- 📰 Trending News Feed
-- 📈 Real-time Stock Prices
-- 🌗 Dark Mode Toggle (Redux state)
-- 🧩 Modular & Responsive UI
+- 🌤️ Real-time Weather updates via OpenWeather API
+- 📰 Live News feeds via NewsAPI
+- 📈 Stock Market tracking via TwelveData API
+- 🌓 Theme toggle (Light/Dark Mode)
+- 🧠 Redux-powered preferences management
+- 📱 Fully Responsive UI
+- ⚡ Built with Next.js App Router and Tailwind CSS
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend  | State Mgmt | Styling     | APIs Used             |
-|-----------|------------|-------------|------------------------|
-| Next.js   | Redux      | Tailwind CSS| NewsAPI, OpenWeather, TwelveData |
+| Frontend      | State Management | Styling       | APIs Used            |
+|---------------|------------------|----------------|------------------------|
+| Next.js (App Router) | Redux Toolkit     | Tailwind CSS | OpenWeather, NewsAPI, TwelveData |
 
 ---
 
-## 📦 Installation
+## 🚀 Getting Started
 
-```bash
-git clone https://github.com/your-username/personalized-dashboard.git
-cd personalized-dashboard
-npm install
+1. **Clone the Repo**
+   ```bash
+   git clone https://github.com/your-username/personalized-dashboard.git
+   cd personalized-dashboard
 ````
 
----
+2. **Install Dependencies**
 
-## 🧪 Run the Project
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-```
+3. **Create `.env.local`**
 
-Open `http://localhost:3000` in your browser.
+   ```
+   NEXT_PUBLIC_WEATHER_API_KEY=your_openweather_key
+   NEXT_PUBLIC_NEWS_API_KEY=your_newsapi_key
+   NEXT_PUBLIC_STOCK_API_KEY=your_twelvedata_key
+   ```
 
----
----
+4. **Run the App**
 
-## 🧾 .gitignore (already added)
+   ```bash
+   npm run dev
+   ```
 
-```gitignore
-node_modules
-.env
-.next
-dist
-.DS_Store
-*.log
-```
+5. **View on** `http://localhost:3000`
 
 ---
 
-## ✨ Screenshots
-
-| Dashboard View                  | Dark Mode                     |
-| ------------------------------- | ----------------------------- |
-| ![light](screenshots/light.png) | ![dark](screenshots/dark.png) |
-
----
-
-## 📌 Folder Structure (Main Parts)
+## 📁 Folder Structure
 
 ```
+personalized-dashboard/
 ├── app/
+│   ├── layout.tsx
 │   ├── page.tsx
-│   ├── components/
-│   ├── store/
-│   └── ...
-├── public/
+├── components/
+│   ├── Navbar.tsx
+│   ├── Sidebar.tsx
+│   ├── Weather.tsx
+│   ├── News.tsx
+│   ├── Stocks.tsx
+├── redux/
+│   ├── store.ts
+│   └── preferencesSlice.ts
 ├── styles/
+│   └── globals.css
+├── public/
 ├── .env.local
-└── tailwind.config.js
+├── .gitignore
+├── tailwind.config.js
+├── postcss.config.js
+├── README.md
 ```
 
 ---
 
-## 🙌 Author
+## 📸 Demo
+
+![Dashboard Screenshot](public/demo-screenshot.png)
+
+---
+
+## 🧪 Future Improvements
+
+* User authentication (JWT / OAuth)
+* Bookmark or save articles/stocks
+* Personalized greetings
+* More widgets: crypto, calendar, to-do, etc.
+
+---
+
+## 👨‍💻 Author
 
 **Kiran S B**
 📧 [biradarkiran009@gmail.com](mailto:biradarkiran009@gmail.com)
 📍 Bangalore, India
-💼 Software Developer
 
 ---
 
-## 📃 License
+## 📄 License
 
-MIT License © 2025
+MIT License - Feel free to use and customize.
+
+```
 
